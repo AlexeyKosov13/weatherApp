@@ -81,11 +81,12 @@ h1 {
 .app .top {
     width: 100%;
     margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .app .description {
-    position: relative;
     right: -90%;
-    transform-origin:  0 0;
     transform: rotate(270deg);
 }
 
