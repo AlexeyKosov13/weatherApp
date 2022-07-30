@@ -1,0 +1,46 @@
+.weatherWrapper {
+    display: flex;
+}
+
+.weatherDay {
+    margin-bottom: 20px;
+}
+
+.weatherDay h2 {
+    margin-bottom: 20px;
+}
+
+.weather__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.2);
+    padding:10px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.weather__img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    margin-bottom: 10px;
+}
+
+.weather__time {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.weather__temp {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.weather__wind {
+    font-size: 12px;
+
+}

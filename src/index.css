@@ -31,10 +31,13 @@ h1 {
 
 .app {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .app:before {
@@ -50,7 +53,7 @@ h1 {
 
 .app .search {
     text-align: center;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 ::placeholder {
@@ -67,26 +70,32 @@ h1 {
 }
 
 .container {
-    height: 350px;
+    height: 100%;
     padding: 0 1rem;
     position: relative;
-    top: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 3rem;
 }
 
 .app .top {
-    width: 50%;
+    width: 60%;
     margin: 1rem auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .app .description {
     right: -90%;
+    height: 50px;
     transform: rotate(270deg);
+}
+
+.location {
+    align-self: start;
 }
 
 .app .bottom {
@@ -95,7 +104,7 @@ h1 {
     text-align: center;
     width: 100%;
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -105,10 +114,18 @@ h1 {
     margin-bottom: 10px;
 }
 
+.feels {
+    padding-right: 30px;
+}
+
 .humidity {
     padding:0 30px 0 30px;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff; 
+}
+
+.wind {
+    padding-left: 30px;
 }
 
 .img_weather {
