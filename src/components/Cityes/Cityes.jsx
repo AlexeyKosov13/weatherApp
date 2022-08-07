@@ -1,14 +1,21 @@
-import React from 'react'
+import React from "react";
+import "./Cityes.css";
 
-export default function Cityes() {
+export default function Cityes({city, setCity}) {
+ 
+  const City = ["Москва", "Чебоксары", "Ульяновск", "Лондон", "Казань"];
+
+  const setCityes = (item) => {
+    setCity(item.target.innerText);
+  }
+
   return (
     <nav className="cityes">
-        <ul className="cityes__list">
-            <li className="cityes__item">Cheboksary</li>
-            <li className="cityes__item">Moscow</li>
-            <li className="cityes__item">Sanct-Peterburg</li>
-            <li className="cityes__item">Ufa</li>
-        </ul>
+      {City.map((item, index) => (
+        <span onClick={(e)=>setCityes(e)} key={index} className={city === item ? "selected" : ""}>
+          {item}
+        </span>
+      ))}
     </nav>
-  )
+  );
 }

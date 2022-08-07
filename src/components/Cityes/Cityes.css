@@ -1,0 +1,15 @@
+.cityes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+} 
+.cityes span {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.selected {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+}
+

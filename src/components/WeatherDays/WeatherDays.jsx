@@ -20,6 +20,23 @@ export default function WeatherDays(data) {
       }
     }
   };
+
+const getDate = (date) => {
+  let res = '';
+  if(date.getDate() < 10) {
+   res = `0${date.getDate()}`;
+  }else {
+    res = `${date.getDate()}`
+  }
+
+  if (date.getMonth()<10) {
+      res += `/0${date.getMonth()+1}/${date.getFullYear()}`;
+    } else {
+      res += `/${date.getMonth()+1}/${date.getFullYear()}`
+    }
+  return res;
+}
+
   return (
     <div className="weatherDay">
       <h2>Погода на 5 дней</h2>
@@ -36,7 +53,7 @@ export default function WeatherDays(data) {
                   className="img_weather"
                 />
                 <div className="weather__time">
-                  {`${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`}
+                  {getDate(date)}
                 </div>
                 <div className="weather__temp">
                   {Math.round(item.main.temp)} C°
