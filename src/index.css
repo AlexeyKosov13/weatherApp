@@ -37,6 +37,7 @@ h1 {
     color: #fff;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .appWrapper {
@@ -90,7 +91,7 @@ h1 {
 }
 
 .app input {
-    padding: .7rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -106,14 +107,13 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .app .top {
-    width: 60%;
-    margin: 1rem auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -131,7 +131,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    width: 100%;
+    width: 95%;
     margin: 1rem auto;
     padding: 2rem;
     border-radius: 12px;
@@ -161,5 +161,16 @@ h1 {
     width: 100px;
     height: 100px;
     filter: invert(1);
+}
+
+@media screen and (max-width: 768px) {
+    .img_weather {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bottom__descr {
+        font-size: 16px;
+    }
 }
 

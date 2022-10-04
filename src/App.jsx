@@ -170,19 +170,19 @@ function App() {
                 {data.main ? (
                   <p className="bold">{data.main.feels_like.toFixed()} °C</p>
                 ) : null}
-                <p>Ощущается</p>
+                <p className="bottom__descr">Ощущается</p>
               </div>
               <div className="humidity">
                 {data.main ? (
                   <p className="bold">{data.main.humidity.toFixed()} %</p>
                 ) : null}
-                <p>Влажность</p>
+                <p className="bottom__descr">Влажность</p>
               </div>
               <div className="wind">
                 {data.wind ? (
                   <p className="bold">{data.wind.speed.toFixed()} м/с</p>
                 ) : null}
-                <p>Скорость ветра</p>
+                <p className="bottom__descr">Скорость ветра</p>
               </div>
             </div>
           </div>
